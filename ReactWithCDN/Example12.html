@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+      
+        <link rel="stylesheet" href="">
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+           <div id="root"></div>
+           <script>
+            function MyApp(){
+                let myUl = React.createElement("ul",{style:{color:"green"}},"Student List with Email Id :",
+                   React.createElement("li",null,"Nitin"),
+                  React.createElement("li",null,"Pawan"),
+                  React.createElement("li",null,"Ajay")
+                );
+                     return myUl;
+            }
+                
+            
+                   ReactDOM.render(React.createElement(MyApp),document.querySelector("#root"));
+
+           </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

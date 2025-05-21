@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+      
+        <link rel="stylesheet" href="">
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+           <div id="root"></div>
+           <script>
+            function MyApp(){
+                    
+                          let heading = React.createElement("h3",null,"Contact List :");
+
+                          let li1= React.createElement("li",null,
+                          React.createElement("h2",{style:{color:"green"}},"Nitin"),
+                          React.createElement("a",{href:"#"},"nitin@gmail.com")
+             
+                          );
+let li2= React.createElement("li",null,
+                          React.createElement("h2",{style:{color:"Red"}},"Soumya"),
+                          React.createElement("a",{href:"#"},"soumya@gmail.com")
+             
+                          );
+
+let li3= React.createElement("li",null,
+                          React.createElement("h2",{style:{color:"orange"}},"Divya"),
+                          React.createElement("a",{href:"#"},"divya@gmail.com")
+             
+                          );
+                   let ul = React.createElement("ul",null,li1,li2,li3);
+                   let div = React.createElement("div",null,heading,ul);
+                   return div;
+
+
+
+
+
+            }
+                
+            
+                   ReactDOM.render(React.createElement(MyApp),document.querySelector("#root"));
+
+           </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

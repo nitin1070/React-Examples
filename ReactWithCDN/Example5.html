@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+      
+        <link rel="stylesheet" href="">
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+           <div id="root"></div>
+           <script>
+            function MyElement(){
+                     let MyElement = React.createElement("h1",null,"Hello React");
+                     return MyElement;
+            }
+                
+                   let div = document.querySelector("#root");
+                   let element = React.createElement(MyElement);  // we have to calling the function using React bcz to use features of React in future, & its called as callback in js
+                   ReactDOM.render(element,div);
+
+           </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

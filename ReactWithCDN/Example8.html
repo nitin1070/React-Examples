@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+      
+        <link rel="stylesheet" href="">
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+           <div id="root"></div>
+           <script>
+            function MyElement(){
+        
+                     let MyElement = React.createElement("h4",null,"What is React ? ");
+                    let myPara = React.createElement("p",null,"React is a component based js library ");
+                      let p = React.createElement("p",null,"React is awesome ");
+                     let div = React.createElement("div",null,[MyElement,myPara,p]); // we can also pass multiple elements as array
+                     return div;
+            }
+                
+        
+                   ReactDOM.render(React.createElement(MyElement),document.querySelector("#root"));
+
+           </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
