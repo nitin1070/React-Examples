@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Class Example 11</title>
+    </head>
+    <body>
+          
+        
+        <script >
+                class Emp{
+                    constructor(name, salary){
+                        this.name=name;
+                        this.salary=salary;
+                      
+                    }
+                    raiseSalary(persant){
+                        this.salary=this.salary+ (this.salary*persant)/100;
+                    }
+
+                 }
+                let e1 = new Emp("Nitin",54166);
+                document.write(`before increment salary<br>`);
+                 document.write(`name : ${e1.name} : salary ${e1.salary}<br>`);
+                  let e2 = new Emp("Soumya",25000);
+                 document.write(`name : ${e2.name} : salary ${e2.salary}<br>`);
+                  document.write(`After increment salary<br>`);
+                   e1.raiseSalary(30);
+                   e2.raiseSalary(20);
+                   document.write(`name : ${e1.name} : salary ${e1.salary}<br>`);
+                    document.write(`name : ${e2.name} : salary ${e2.salary}`);
+        </script>
+    </body>
+</html>

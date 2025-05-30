@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Class Example 15</title>
+    </head>
+    <body>
+          
+        
+        <script >
+                class Vehicle{
+                    constructor(){
+                        document.write(`Vehicle constructor calling...<br>`);
+                    }
+                    accelerate(){
+                    
+                        document.write(`accelarating...<br>`);
+                    }
+                }
+                class Car extends Vehicle{
+                    constructor(){
+                        this.color="black";
+                        super(); // super must call if we want to call the child class constructor
+                        document.write(`Car constructor calling...<br>`);
+                    }
+                       reverse(){
+                        document.write(`reversing the car...`);
+                       }
+                    
+                }
+                let slavia = new Car();
+                slavia.accelerate();
+                slavia.reverse();
+                 
+                 
+        </script>
+    </body>
+</html>
