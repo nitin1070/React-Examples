@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <title>Class Example 12</title>
-    </head>
-    <body>
-          
-        
-        <script >
-                class Vehicle{
-                    constructor(){
-                        document.write(`Vehicle constructor calling...<br>`);
-                    }
-                    accelerate(){
-                    
-                        document.write(`accelarating...`);
-                    }
-                }
-                class Car extends Vehicle{
-                       reverse(){
-                        document.write(`reversing the car...`);
-                       }
-                    
-                }
-                let slavia = new Car();
-                slavia.accelerate();
-                slavia.reverse();
-                 
-                 
-        </script>
-    </body>
+<html lang="en">
+	<head>
+		<title>Class Example 13</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+				raiseSalary() {
+					this.salary = this.salary + this.salary * 0.1;
+				}
+			}
+			let e1 = new Emp("Ravi", 20000);
+			document.write("Before incrementing salary");
+			document.write(`<br>${e1.ename},${e1.salary}`);
+			let e2 = new Emp("Ajay", 40000);
+			document.write(`<br>${e2.ename},${e2.salary}`);
+			e1.raiseSalary();
+			e2.raiseSalary();
+			document.write("<br>After incrementing salary");
+			document.write(`<br>${e1.ename},${e1.salary}`);
+			document.write(`<br>${e2.ename},${e2.salary}`);
+		</script>
+	</head>
+	<body></body>
 </html>

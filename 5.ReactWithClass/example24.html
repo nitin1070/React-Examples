@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Class Example 14</title>
+		<title>Class Example 24</title>
 		<script>
 			class Emp {
 				constructor(ename, salary) {
@@ -12,8 +12,9 @@
 					return `name:${this.ename},salary:${this.salary}`;
 				}
 			}
-			let e1 = new Emp("Ravi", 20000);
-			document.write(`<br>${e1}`);
+			class Manager extends Emp {}
+			let boss = new Manager("Ajay", 50000);
+			document.write(`${boss}`);
 		</script>
 	</head>
 	<body></body>

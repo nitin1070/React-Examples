@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Class Example 12</title>
+		<title>Class Example 25</title>
 		<script>
 			class Emp {
 				constructor(ename, salary) {
 					this.ename = ename;
 					this.salary = salary;
 				}
+				toString() {
+					return `name:${this.ename},salary:${this.salary}`;
+				}
 			}
-			let e1 = new Emp("Ravi", 20000);
-			document.write(`${e1.ename},${e1.salary}`);
-			let e2 = new Emp();
-			document.write(`<br>${e2.ename},${e2.salary}`);
+			class Manager extends Emp {}
+			let boss = new Manager();
+			document.write(`${boss}`);
 		</script>
 	</head>
 	<body></body>

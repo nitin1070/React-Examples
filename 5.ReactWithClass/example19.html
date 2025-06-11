@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Class Example 16</title>
+		<title>Class Example 19</title>
 		<script>
 			class Vehicle {
+				constructor() {
+					document.write("Vehicle constructed....<br>");
+				}
 				accelerate() {
 					document.write("accelerating....<br>");
 				}
 			}
 			class Car extends Vehicle {
+				constructor() {
+					document.write("Car constructed....<br>");
+					super(); // This line is compulsory
+				}
 				reverse() {
 					document.write("reversing....<br>");
 				}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 33</title>
+		<script>
+			class Person {
+				constructor(fname, lname) {
+					this.fname = fname;
+					this.lname = lname;
+				}
+				get fullName() {
+					return this.fname + " " + this.lname;
+				}
+				set fullName(name) {
+					let str = name.split(" ");
+					this.fname = str[0];
+					this.lname = str[1];
+				}
+			}
+			let p = new Person("Sachin", "Kapoor");
+			document.write(`Full Name ${p.fullName}`);
+			p.fullName = "Deepak Kumar";
+			document.write(`<br>After Change Full Name ${p.fullName}`);
+		</script>
+	</head>
+	<body></body>
+</html>

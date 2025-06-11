@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 30</title>
+		<script>
+			class Circle {
+				constructor(radius) {
+					this.radius = radius;
+				}
+				area() {
+					return Math.PI * Math.pow(this.radius, 2);
+				}
+			}
+			class Cylinder extends Circle {
+				constructor(radius, height) {
+					super(radius);
+					this.height = height;
+				}
+				area() {
+					return 2 * super.area() + 2 * Math.PI * this.radius * this.height;
+				}
+				volume() {
+					return super.area() * this.height;
+				}
+			}
+			let cy = new Cylinder(10, 5);
+			document.write(`Area is ${cy.area().toFixed(2)}<br>`);
+			document.write(`Volume is ${cy.volume().toFixed(2)}<br>`);
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Object Destructuring</title>
+		<script>
+			let person = { age: 24, name: "sumit" };
+			let { x, y, z } = person; //Since we are using diff names for var than properties of person , they will be set to undefined
+			document.write(`${x},${y},${z}`);
+		</script>
+	</head>
+	<body></body>
+</html>

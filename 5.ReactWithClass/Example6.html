@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-          
-        
-        <script >
-                class Emp{
-                    constructor(){
-                        this.name="Soumya";
-                        this.age=24;
-                      
-                    }
+<html lang="en">
+	<head>
+		<title>Class Example 6</title>
+		<script>
+			class Emp {}
+			let e1 = new Emp();
+			e1.ename = "Ravi";
+			e1.salary = 50000.0;
+			document.write(`${e1.ename},${e1.salary}`);
 
-                 }
-                let e1 = new Emp();
-                 document.write(`name : ${e1.name} : age ${e1.age}`);
-                
-        </script>
-    </body>
+			let e2 = new Emp();
+			e2.ename = "Satish";
+			e2.salary = 60000.0;
+			document.write(`<br>${e2.ename},${e2.salary}`);
+		</script>
+	</head>
+	<body></body>
 </html>

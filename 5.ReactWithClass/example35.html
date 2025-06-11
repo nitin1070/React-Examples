@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 33</title>
+		<script>
+			class Student {
+				static courseName;
+				constructor(name, age) {
+					this.name = name;
+					this.age = age;
+				}
+				static setCourseName(courseName) {
+					Student.courseName = courseName;
+				}
+				show() {
+					document.write(
+						`Name:${this.name},Age:${this.age},Course Name:${Student.courseName}<br>`
+					);
+				}
+			}
+			let s1 = new Student("Gourav", 21, "React");
+			let s2 = new Student("Prabal", 20, "React");
+			Student.setCourseName("React JS");
+			s1.show();
+			s2.show();
+		</script>
+	</head>
+	<body></body>
+</html>

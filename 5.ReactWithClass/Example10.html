@@ -1,38 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-          
-        
-        <script >
-                class Emp{
-                    constructor(name, salary){
-                        this.name=name;
-                        this.salary=salary;
-                      
-                    }
-                    raiseSalary(){
-                        this.salary=this.salary+ this.salary*0.1;
-                    }
-
-                 }
-                let e1 = new Emp("Nitin",20000);
-                document.write(`before increment salary<br>`);
-                 document.write(`name : ${e1.name} : salary ${e1.salary}<br>`);
-                  let e2 = new Emp("Soumya",25000);
-                 document.write(`name : ${e2.name} : salary ${e2.salary}<br>`);
-                  document.write(`After increment salary<br>`);
-                   e1.raiseSalary();
-                   e2.raiseSalary();
-                   document.write(`name : ${e1.name} : salary ${e1.salary}<br>`);
-                    document.write(`name : ${e2.name} : salary ${e2.salary}`);
-        </script>
-    </body>
+<html lang="en">
+	<head>
+		<title>Class Example 10</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+			}
+			let e1 = new Emp("Ravi", 20000);
+			document.write(`${e1.ename},${e1.salary}`);
+			let e2 = new Emp("Prashant", 40000.0);
+			document.write(`<br>${e2.ename},${e2.salary}`);
+		</script>
+	</head>
+	<body></body>
 </html>

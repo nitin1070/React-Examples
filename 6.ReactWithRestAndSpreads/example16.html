@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spread Operator</title>
+		<script>
+			let person1 = { age: 24, name: "Ravi" };
+			let address = { city: "Bhopal", locality: "MP Nagar" };
+			let person2 = { ...person1, ...address }; // deep copy
+			document.write(`age:${person2.age},name:${person2.name}<br>`);
+			document.write(`city:${person2.city},locality:${person2.locality}<br>`);
+		</script>
+	</head>
+	<body></body>
+</html>

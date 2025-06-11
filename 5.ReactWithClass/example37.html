@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 37</title>
+		<script>
+			class Data {
+				a = 10;
+				#b = 20; // This will make b as private var
+			}
+			let obj = new Data();
+			document.write(`a=${obj.a}<br>`);
+			document.write(`b=${obj.#b}<br>`); //This will give error
+		</script>
+	</head>
+	<body></body>
+</html>

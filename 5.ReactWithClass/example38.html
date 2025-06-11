@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 38</title>
+		<script>
+			class Data {
+				a = 10;
+				#b = 20; // This will make b as private var
+
+				show() {
+					document.write(`a=${this.a}<br>`);
+					document.write(`b=${this.#b}<br>`);
+				}
+			}
+			let obj = new Data();
+			obj.show();
+		</script>
+	</head>
+	<body></body>
+</html>

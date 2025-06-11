@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spread Operator</title>
+		<script>
+			function add(a, b, c) {
+				let sum = a + b + c;
+				document.write(`Sum is ${sum}<br>`);
+			}
+			let arr = [10, 20];
+			add(...arr); //add(10,20)
+		</script>
+	</head>
+	<body></body>
+</html>

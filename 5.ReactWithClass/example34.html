@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 33</title>
+		<script>
+			class Student {
+				static courseName = "React";
+				constructor(name, age) {
+					this.name = name;
+					this.age = age;
+				}
+			}
+			let s1 = new Student("Gourav", 21, "React");
+			let s2 = new Student("Prabal", 20, "React");
+			document.write(
+				`Name:${s1.name},Age:${s1.age},Course Name:${Student.courseName}<br>`
+			);
+			document.write(
+				`Name:${s2.name},Age:${s2.age},Course Name:${Student.courseName}<br>`
+			);
+		</script>
+	</head>
+	<body></body>
+</html>

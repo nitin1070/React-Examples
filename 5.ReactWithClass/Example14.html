@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <title>Class Example 12</title>
-    </head>
-    <body>
-          
-        
-        <script >
-                class Vehicle{
-                    constructor(){
-                        document.write(`Vehicle constructor calling...<br>`);
-                    }
-                    accelerate(){
-                    
-                        document.write(`accelarating...<br>`);
-                    }
-                }
-                class Car extends Vehicle{
-                    constructor(){
-                        super(); // super must call if we want to call the child class constructor
-                        document.write(`Car constructor calling...<br>`);
-                    }
-                       reverse(){
-                        document.write(`reversing the car...`);
-                       }
-                    
-                }
-                let slavia = new Car();
-                slavia.accelerate();
-                slavia.reverse();
-                 
-                 
-        </script>
-    </body>
+<html lang="en">
+	<head>
+		<title>Class Example 14</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+				raiseSalary(percent) {
+					this.salary = this.salary + (this.salary * percent) / 100;
+				}
+			}
+			let e1 = new Emp("Ravi", 20000);
+			document.write("Before incrementing salary");
+			document.write(`<br>${e1.ename},${e1.salary}`);
+			let e2 = new Emp("Ajay", 40000);
+			document.write(`<br>${e2.ename},${e2.salary}`);
+			e1.raiseSalary(20);
+			e2.raiseSalary(30);
+			document.write("<br>After incrementing salary");
+			document.write(`<br>${e1.ename},${e1.salary}`);
+			document.write(`<br>${e2.ename},${e2.salary}`);
+		</script>
+	</head>
+	<body></body>
 </html>

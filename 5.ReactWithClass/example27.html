@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 27</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+				toString() {
+					return `name:${this.ename},salary:${this.salary}`;
+				}
+			}
+			class Manager extends Emp {
+				constructor(ename, salary, bonus) {
+					super(ename, salary);
+					this.bonus = bonus;
+				}
+				toString() {
+					return `name:${this.ename},salary:${this.salary},bonus:${this.bonus}`;
+				}
+			}
+			let boss = new Manager("Ajay", 50000, 30000);
+			document.write(`${boss}`);
+		</script>
+	</head>
+	<body></body>
+</html>

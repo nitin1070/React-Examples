@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spread Operator</title>
+		<script>
+			let even = [2, 4, 6, 8];
+			let odd = [3, 5, 7, 9];
+			let all = [...even, ...odd]; // Deep copy
+			all.forEach((x) => {
+				document.write(`${x}<br>`);
+			});
+		</script>
+	</head>
+	<body></body>
+</html>

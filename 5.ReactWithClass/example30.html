@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Class Example 30</title>
+		<script>
+			class Emp {
+				constructor(ename, salary) {
+					this.ename = ename;
+					this.salary = salary;
+				}
+				raiseSalary() {
+					this.salary = this.salary + this.salary * 0.1;
+				}
+				toString() {
+					return `name:${this.ename},salary:${this.salary}`;
+				}
+			}
+			class Manager extends Emp {
+				constructor(ename, salary, bonus) {
+					super(ename, salary);
+					this.bonus = bonus;
+				}
+				raiseIncome() {
+					//this.raiseSalary();
+					super.raiseSalary();
+					this.bonus = this.bonus + this.bonus * 0.1;
+				}
+				toString() {
+					return `name:${this.ename},salary:${this.salary},bonus:${this.bonus}`;
+				}
+			}
+			let boss = new Manager("Ajay", 50000, 30000);
+			document.write("Before salary incr<br>");
+			document.write(`${boss}`);
+			boss.raiseIncome();
+			document.write("<br>After salary incr<br>");
+			document.write(`${boss}`);
+		</script>
+	</head>
+	<body></body>
+</html>

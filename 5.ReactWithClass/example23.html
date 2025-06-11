@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Class Example 16</title>
+		<title>Class Example 22</title>
 		<script>
 			class Vehicle {
 				accelerate() {
@@ -9,8 +9,12 @@
 				}
 			}
 			class Car extends Vehicle {
+				constructor() {
+					super(); //This is compulsory
+					document.write("Car constructed....<br>");
+				}
 				reverse() {
-					document.write("reversing....<br>");
+					document.write("reversing....<br> ");
 				}
 			}
 			let brezza = new Car();
